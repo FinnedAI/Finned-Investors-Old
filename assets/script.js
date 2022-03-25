@@ -16,6 +16,8 @@ async function contents(dir) {
         } else {
             var filetype = "-"
         }
+
+        document.querySelector("#pane").innerHTML = "";
         
         document.querySelector("#pane").innerHTML += `
             <div class="file">
