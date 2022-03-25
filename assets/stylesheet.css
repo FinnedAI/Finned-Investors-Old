@@ -29,6 +29,7 @@
     font-size: 1.2em;
     float: left;
     margin-left: 0px;
+    cursor: pointer;
 }
 
 .links-list figcaption {
@@ -38,10 +39,6 @@
 .links-list figure > ul {
     display: none;
     font-size: 1em;
-}
-
-.links-list figure:hover ul, .links-list figure:active ul {
-    display: block;
 }
 
 #pane {

@@ -1,3 +1,15 @@
+document.querySelector('.links-list').querySelectorAll('figure').forEach(link => {
+    link.addEventListener('click', () => {
+        if (link.querySelector('ul').style.display == "block") {
+            link.querySelector('ul').style.display = "none";
+            link.querySelector('figcaption').querySelector('i').className = `fa-solid fa-caret-right`;
+        } else {
+            link.querySelector('ul').style.display = "block";
+            link.querySelector('figcaption').querySelector('i').className = `fa-solid fa-caret-down`;
+        }
+    });
+});
+
 var supported = ['pptx', 'docx', 'xlsx', 'txt', 'zip']
 var supported_word = ['-powerpoint', '-word', '-chart-column', '-lines', '-zipper']
 
