@@ -1,0 +1,58 @@
+:root {
+    --main-bg-color: #18191A;
+    --secondary-bg-color: #242526;
+    --bg-hover-color: #3A3B3C;
+    --text-primary: #E4E6EB;
+    --text-secondary: #B0B3B8;
+    --blue-primary: #9bd4e4;
+    --blue-secondary: #cadeef;
+    --blue-primary-opaque: #9bd4e4bf;;
+    --blue-secondary-opaque: #cadeefbf;
+}
+
+.main {
+    position: absolute;
+    top: 10vh;
+    left:0;
+    width: 100vw;
+    background: var(--text-primary);
+}
+
+.links-list {
+    display: relative;
+}
+
+.links-list figure {
+    border-bottom: 2px solid var(--main-bg-color);
+    width: 100%;
+    color: var(--secondary-bg-color);
+    font-size: 1.2em;
+    float: left;
+    margin-left: 0px;
+}
+
+.links-list figcaption {
+    margin-left: 10px;
+}
+
+.links-list figure > ul {
+    display: none;
+    font-size: 1em;
+}
+
+.links-list figure:hover ul {
+    display: block;
+}
+
+#pane {
+    margin: 100px;
+}
+
+#pane .file {
+    position: relative;
+}
+
+.file i {
+    display: block;
+    font-size: 100px;
+}
