@@ -1,0 +1,104 @@
+:root {
+    --main-bg-color: #18191A;
+    --secondary-bg-color: #242526;
+    --bg-hover-color: #3A3B3C;
+    --text-primary: #E4E6EB;
+    --text-secondary: #B0B3B8;
+    --blue-primary: #9bd4e4;
+    --blue-secondary: #cadeef;
+    --blue-primary-opaque: #9bd4e4bf;;
+    --blue-secondary-opaque: #cadeefbf;
+}
+
+html{scroll-behavior: smooth !important;}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--text-primary);
+
+    word-break: break-word;
+    overflow-x: hidden;
+}
+
+.sellix-iframe-loader-container, .sellix-iframe-loader {
+    display: none;
+}
+.sellix-iframe-content iframe {
+    filter: grayscale(100%) sepia(100%) invert(10%) saturate(9%) hue-rotate(169deg) brightness(93%) contrast(100%);
+}
+
+/* mobile devices */
+@media only screen and (max-width: 1000px) {
+    .navbar img {
+        display: none !important;
+    }
+}
+
+*::-webkit-scrollbar {
+    position: fixed;
+    background-color: var(--bg-hover-color);
+    width: 18px;
+}
+   
+*::-webkit-scrollbar-track {
+    position: relative;
+    background-color: #bebebe;
+}
+   
+*::-webkit-scrollbar-thumb {
+    background-color: var(--bg-hover-color);
+    border: 5px solid #bebebe;
+    border-radius: 15px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+    left: 0px;
+    top:0px;
+
+    background-color: #000;
+
+    width: 100%;
+    height: 10vh;
+}
+
+.navbar img{
+    position: relative;
+    left: 5px;
+    display: inline-block;
+
+    height: 100%;
+    width: auto;
+}
+
+.navbar a, .navbar button {
+    position: relative;
+    color: var(--text-primary);
+    display: inline;
+    padding: 1%;
+    float: right;
+
+    background-color: var(--main-bg-color);
+    text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar button {
+    background-color: var(--blue-primary) !important;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+}
+
+.navbar a:hover {
+    background-color: var(--text-primary);
+    color: var(--main-bg-color);
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer; 
+}
