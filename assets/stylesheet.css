@@ -10,6 +10,11 @@
     --blue-secondary-opaque: #cadeefbf;
 }
 
+a {
+    color: var(--bg-hover-color);
+    text-decoration: none;
+}
+
 .main {
     position: absolute;
     top: 10vh;
@@ -27,7 +32,6 @@
     width: 100%;
     color: var(--secondary-bg-color);
     font-size: 1.2em;
-    float: left;
     margin-left: 0px;
     cursor: pointer;
 }
@@ -42,18 +46,36 @@
 }
 
 #pane {
-    margin: 100px;
+    text-align: center;
 }
 
 #pane .file {
     position: relative;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .file i {
     display: block;
     font-size: 100px;
+    color: var(--blue-primary-opaque);
 }
 
 .file {
     text-align: center;
+    transition: ease-in-out 1s;
+}
+
+.file *:not(i) {
+    color: var(--bg-hover-color);
+    text-decoration: none;
+}
+
+.file:hover {
+    background: var(--bg-hover-color);
+}
+
+.file:hover *:not(i) {
+    color: var(--text-primary);
 }
