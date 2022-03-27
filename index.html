@@ -24,8 +24,13 @@
 
     <div class="navbar">
         <img src="https://finned.tech/assets/images/logo.png">
-        <button data-sellix-product="6233f5677b093" type="submit" alt="Buy Now with sellix.io">
-        Get It!
+        <button
+            onclick="this.setAttribute('data-sellix-custom-referrer', location.href)"
+            data-sellix-product="6233f5677b093"
+            type="submit"
+            alt="Buy Now with sellix.io"
+        >
+            Get It!
         </button>
         <a href="https://finned.tech/#faqs">FAQs</a>
         <a href="https://finned.tech/#contact">Contact</a>
